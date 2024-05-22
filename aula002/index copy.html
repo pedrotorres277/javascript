@@ -3,29 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titulo</title>
+    <title>Layout</title>
     <style>
-        body{
-            background-color: rgb(0, 34, 128);
-            color: white;
-            font: normal 20pt Arial;
-
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            list-style: none;
+            font-size: 1.2rem;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        h1{
-            color: yellow;
+        body{
+           background-image: linear-gradient(to bottom, rgb(173, 188, 230), rgb(47, 0, 255), rgb(87, 0, 128), black);
+           background-attachment: fixed;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 20px;
+            background-color: rgb(63, 60, 60);
+            
+        }
+        .menu{
+            display: flex;
+            gap: 10px;
+        }
+        .menu li a{
+            display: block;
+            padding: 10px;
+        }
+        img{
+            max-width: 100%;
+            display: block;
+        }
+        section{
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        section div{
+            flex: 1 1 200px;
+            margin: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>Ola mundo!</h1>
-    <p>Ja me livrei da maldição</p>
+    <header>
+        <a href="#">Logo</a>
+        <nav>
+            <ul class="menu">
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Produtos</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <div>
+                <img src="img1.jpg" alt="">
+                    <p>Legenda</p>
+                </img>
+            </div>
+            <div>
+                <img src="img1.jpg" alt="">
+                    <p>Legenda</p>
+                </img>
+            </div>
+            <div>
+                <img src="img1.jpg" alt="">
+                    <p>Legenda</p>
+                </img>
+            </div>
+            <div>
+                <img src="img1.jpg" alt="">
+                    <p>Legenda</p>
+                </img>
+            </div>
+            <div>
+                <img src="img1.jpg" alt="">
+                    <p>Legenda</p>
+                </img>
+            </div>
+            <div>
+                <img src="img1.jpg" alt="">
+                    <p>Legenda</p>
+         s      </img>
+            </div>
+        </section>
+    
+    
+    
     <script>
     //    var nome = window.prompt('Qual seu nome?');
-    //    alert ("É um prazer em te conhecer, " + nome + "!")
-        var n1 = Number.parseFloat(window.prompt("Digite o primeiro número: "))
-        var n2 = Number.parseFloat(window.prompt("Digite o primeiro número: "))
-        var result = n1 + n2
-        window.alert("A soma dos valores é: " + result)
+
+    //    alert ("É um prazer em te conhecer, " + nome + "!");
+
+        // var n1 = Number.parseFloat(window.prompt("Digite o primeiro número: "));
+
+        // var n2 = Number.parseFloat(window.prompt("Digite o primeiro número: "));
+
+        // var result = n1 + n2;
+
+        // window.alert("A soma dos valores é: " + result);
+
+         // var nome = window.prompt("Qual seu nome?");
+
+        //  document.write("seu nome tem" + " " + nome.length + " " + "letras");
+
+        //  document.writeln(" " + nome.toUpperCase());
+
+        //  document.writeln(nome.toLowerCase());
+
+
     </script>
 </body>
 </html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#patern{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        div#son{
+            background-color: green;
+            color: white;
+            padding: 10px;
+            height: 100px;
+            width: 100px;
+            line-height: 100px;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 50%;
+        }
+        div#son:hover{
+            cursor: pointer;
+            background-color: darkgreen;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando Estudos em DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o DOM em JavaScript</p>
+    <div id="patern">
+        <div id="son" onclick="clicar()" onmouseenter="entrar()" onmouseout="
+            sair()">Interaja...</div>
+    </div>
+
+    <script>
+        let son = window.document.getElementById("son");
+        function clicar(){
+            son.innerHTML = "Clicou!";
+            son.style.background = "red";
+        }
+        function entrar(){
+            son.innerHTML = "Entrou!";
+        }
+        function sair(){
+            son.innerHTML = "Saiu!";
+        }
+    </script>
+</body>
+</html>

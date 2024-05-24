@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do dia</title>
+    <style>
+        *{
+            font-family: 'Arial';
+        }
+       Body{
+        background-color: darkcyan;
+        color: white;
+        text-align: center;
+       }
+       main{
+        background-color: white;
+        width: 70vw;
+        height: 40vh;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 15px;
+        color: black;
+        margin: auto;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.308);
+        line-height: 1.5;
+       }
+       img{
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+       }
+       
+    </style>
+</head>
+<body onload="carregar()">
+   <header>
+    <h1>Hora do dia</h1>
+   </header>
+   <main>
+    <section>
+        <div id="msg">
+            Testando...
+        </div>
+        <div id="foto">
+            <img  id="imagem" src="dia.jpg" alt="foto do dia">
+        </div>
+    </section>
+    </main>
+    <footer>
+        <p>&copy; <i>CursoemVideo</i></p>
+    </footer>
+   
+    <script>
+        function carregar(){
+        var msg = window.document.getElementById("msg");
+        var img = window.document.getElementById("imagem");
+        var data = new Date();
+        var hora = data.getHours();
+        
+        msg.innerHTML = `Agora são ${hora} horas.`;
+            if(hora >= 0 && hora < 12){
+                img.src = 'dia.jpg'
+            }
+            else if(hora >= 12 && hora < 18){
+                img.src = 'tarde.jpg'
+                document.body.style.background = "coral"
+            }
+            else {
+                img.src = 'noite.jpg'
+                document.body.style.background = "gray"
+            }
+        }
+    </script>
+</body>
+</html>

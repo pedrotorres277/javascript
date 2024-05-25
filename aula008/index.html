@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <style>
+    *{
+        font-family: 'Arial';
+        font-size: large;
+    }
+    h1{
+        font-size: 28px;
+    }
+   Body{
+    background-color: darkcyan;
+    color: white;
+    text-align: center;
+   }
+   main{
+    background-color: white;
+    width: 70vw;
+    height: 40vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    color: black;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.308);
+    line-height: 1.5;
+    text-align: start;
+   }
+   </style>
+</head>
+<body>
+ <header>
+    <h1>Verificador de Idade</h1>
+    <main>
+        <section>
+            <div>
+                <p>
+                    Ano de Nascimento: <input type="Number" id="idade" required min="0" maxlength="4">
+                </p>
+            </div>
+            <div>
+                <p>
+                    Sexo: <input type="radio" id="masc" checked name="sex">
+                    <label for="masc">Masculino</label>
+                    <input type="radio" id="fem" name="sex">
+                    <label for="fem">Feminino</label>
+                </p>
+                <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+                </p>
+            </div>
+            <div id="res">
+                Preencha os dados acima para ver o resultado!
+            </div>
+        </section>
+    </main>
+ </header>
+ <script>
+    function verificar(){
+        var data = new Date()
+        var ano = data.getFullYear()
+        var fano = document.getElementById("idade")
+        var res = document.getElementById("res")
+        if(fano.value.length == 0 || fano.value > ano){
+            window.alert("ERRO, verifique os dados e tente novamente...")
+        }
+        else{
+            
+            var idade = ano - Number(fano.value)
+            res.innerHTML = `Sua idade é de: <strong>${idade}</strong> anos`
+        }
+    }
+ </script>
+</body>
+</html>

@@ -9,6 +9,30 @@
 <body>
     <h1>Testando ScriptJs</h1>
     <p></p>
+    <button id="botao1" onmouseover="onEnter()" onmouseout="onLeave()" onclick="onClick()">Clique aqui</button>
+    <p></p>
+    <h1>Lâmpada</h1>
+    <div>
+        
+        <img id="lampada" style="width: 200px; height: 200px;" src="lampada.webp" alt="lampada">
+        <button id="botao2" onclick="lampadaOn()" ondblclick="lampadaOff()">On / Off</button>
+    </div>
+    <br><br>
+    <h2 style="color: white; text-shadow: 1px 1px 3px black;">Digite uma cor para o botao abaixo</h2>
+    <br>
+    <input type="text" id="input1" style="height: 30px;" placeholder="Ex: azul" required>
+    <br>
+    <br>
+    <button style="width: 100px;
+    height: 50px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 3px black;
+    border-radius: 20px;" id="checar" onclick="verificaCor()">Check</button>
+    <br>
+    <br><br>
+    <select name="ano" id="ano">
+        <option selected disabled>Selecione o Ano:</option>
+    </select>
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,7 @@
+
+body{
+    background-image: linear-gradient(to bottom, rgb(2, 109, 2), rgb(9, 82, 9), black);
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}

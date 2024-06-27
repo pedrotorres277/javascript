@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: bisque;
+            text-align: center;
+        }
+        #botao1{
+            display: block;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: aqua;
+            cursor: pointer;
+        }
+        #botao2{
+            border-radius: 50%;
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>Fundamentos Javascript</h1>
+    <p id="texto"></p>
+
+    <button id="botao1" onclick="trocarCor()">Change Background-Color</button>
+    <button id="botao2" onmouseover="viraVermelho()" onmouseout="viraAzul()"><strong>Click</strong></button>
+
+    <script>
+        var oi = "Olá Mundo!";
+        console.log(oi);
+        let hello = " Hello World";
+        console.log(hello);
+        let n1 = 32;
+        let n2 = 90;
+        let res = console.log(n1 + n2);
+        document.getElementById("texto").innerHTML = "Meu primeiro texto <strong>JS</strong>!";
+
+        function soma(valor1, valor2){
+            document.body.style.backgroundColor = "blue";
+           return valor1 + valor2;
+        }
+
+        function trocarCor(){
+            document.body.style.backgroundColor = "lightgray";
+        }
+
+        function viraVermelho(){
+            var button2 = document.getElementById("botao2");
+            button2.style.backgroundColor = "red";
+        }
+        function viraAzul(){
+            var button2 = document.getElementById("botao2");
+            button2.style.backgroundColor = "aqua";
+        }
+        // var num1 = parseFloat(window.prompt("Digite o primeiro número: "));
+        // var num2 = parseFloat(window.prompt("Digite o segundo número: "));
+        // window.alert(soma(num1, num2));
+    </script>
+</body>
+</html>

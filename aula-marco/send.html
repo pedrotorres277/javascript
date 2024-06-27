@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar e-mail</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="emailForm">
+        <label for="emailInput">Email</label>
+        <input type="Email" id="emailInput" placeholder="Digite aqui" required> 
+        <br>
+        <label for="subjectInput">Assunto:</label>
+        <input type="text" id="subjectInput" required>
+        <br>
+        <textarea id="messageInput" cols="50" rows="4" placeholder="Digite sua mensagem..." required></textarea>
+        <br>
+        <button type="button" onclick="sendMail()">Enviar</button>
+        <script src="script.js"></script>
+    </form>
+</body>
+</html>

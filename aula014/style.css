@@ -35,3 +35,12 @@ div{
     cursor: pointer;
     background-color: green;
 }
+form{
+    border: 5px solid black;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px rgb(8, 219, 138);
+    border-radius: 20px;
+    margin: 50px;
+    padding: 15px;
+    box-shadow: 1px 1px 5px black;
+}

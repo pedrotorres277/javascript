@@ -17,3 +17,10 @@ var tempo = setInterval(function(){
 function pararContagem(){
     clearInterval(tempo);
 }
+
+var p = document.getElementsByTagName("p");
+function Carro(valor1, valor2, valor3) {
+return valor1 + (" ") + valor2 + (" ") + valor3
+}
+var uno = Carro("Fiat", "Uno", 2010);
+p[0].innerHTML = uno

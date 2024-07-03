@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <h1>Calculator with Javascript</h1>
+      <p>Digite o primeiro número:</p>
+      <input id="num1" type="text" required />
+      <p>Digite o operador:</p>
+      <input id="op" type="text" placeholder="Ex: + - / *" required maxlength="1"/>
+      <p>Digite o segundo número:</p>
+      <input id="num2" type="text" required />
+      <br />
+      <button onclick="enviar(event)">Send</button>
+      <p id="answer">Resposta</p>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
